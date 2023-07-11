@@ -1,0 +1,12 @@
+type Weather {
+    city: String!
+    temperatureMax: Float!
+    temperatureMin: Float!
+    lat: Float!
+    lon: Float!
+    date: String!
+}
+
+type Query {
+    getWeather(city:String!, date:String!): Weather!
+}
